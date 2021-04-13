@@ -62,11 +62,10 @@ class ComunicationDialog {
   Future<void> goToWhatsappChat(var whatsappNumber) async {
     String urlWhatsappNumber;
     if (Platform.isAndroid) {
-      urlWhatsappNumber =
-          "https://wa.me/$whatsappNumber/?text=urlencodedtext"; // new line
+      urlWhatsappNumber = "https://wa.me/$whatsappNumber/?text=urlencodedtext";
     } else {
       urlWhatsappNumber =
-          "https://api.whatsapp.com/send?phone=$whatsappNumber=urlencodedtext"; // new line
+          "https://api.whatsapp.com/send?phone=$whatsappNumber=urlencodedtext";
     }
     if (await canLaunch(urlWhatsappNumber)) {
       await launch(urlWhatsappNumber);

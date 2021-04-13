@@ -151,8 +151,8 @@ class Vistamensajeros extends StatelessWidget {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (BuildContext context) => Perfilmensajero(
-                          perfil: posts[posicion], idperfil: posicion)));
+                      builder: (BuildContext context) =>
+                          Perfilmensajero(perfil: posts[posicion])));
             },
             leading: Container(
               padding: EdgeInsets.all(5.0),

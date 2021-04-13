@@ -4,9 +4,8 @@ import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class Perfilmensajero extends StatelessWidget {
-  final idperfil;
   final Post perfil;
-  Perfilmensajero({Key key, this.perfil, this.idperfil});
+  Perfilmensajero({Key key, this.perfil});
   ComunicationDialog comunicationDialog = new ComunicationDialog();
 
   @override
